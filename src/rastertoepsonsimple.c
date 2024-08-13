@@ -182,7 +182,7 @@ inline int getOptionChoiceIndex(const char * choiceName, ppd_file_t * ppd)
     return atoi(choice->choice);
 }
 
-inline void getPageWidthPageHeight(ppd_file_t * ppd, struct settings_ * settings)
+void getPageWidthPageHeight(ppd_file_t * ppd, struct settings_ * settings)
 {
     ppd_choice_t * choice;
     ppd_option_t * option;
